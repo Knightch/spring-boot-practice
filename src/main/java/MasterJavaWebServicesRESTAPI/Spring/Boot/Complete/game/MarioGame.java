@@ -1,5 +1,8 @@
 package MasterJavaWebServicesRESTAPI.Spring.Boot.Complete.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MarioGame  implements GamingConsole{
 
     public void up(){
