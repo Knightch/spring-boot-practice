@@ -1,6 +1,6 @@
 package MasterJavaWebServicesRESTAPI.Spring.Boot.Complete.game;
 
-public class MarioGame {
+public class MarioGame  implements GamingConsole{
 
     public void up(){
         System.out.println("MarioGame Up");
