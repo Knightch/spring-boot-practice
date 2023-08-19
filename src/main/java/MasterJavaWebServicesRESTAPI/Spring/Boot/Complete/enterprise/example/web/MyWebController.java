@@ -7,8 +7,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyWebController {
 
-    @Autowired
     private BusinessService businessService;
+
+    @Autowired
+    public MyWebController(BusinessService businessService) {
+        super();
+        System.out.println("Constructor Injection");
+        this.businessService = businessService;
+    }
 
     public long returnValueFromBusinessService() {
         return businessService.calculateSum();
